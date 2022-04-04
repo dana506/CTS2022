@@ -4,4 +4,8 @@ Formating
 * the code wasn't indented properly (proceed with indents)
 * some curly brackets were added where they were missing
 * the else clause from constructor was removed because of the exception in the if clause
-* the use of proper, suggestive CammelCase names
+* the use of proper, suggestive lowerCammelCase names
+
+General Programming
+* this keyword was added to differentiate the loanValue of the class and the parameter in the setter function
+* string concatenation was removed and function was implemented using string builder
