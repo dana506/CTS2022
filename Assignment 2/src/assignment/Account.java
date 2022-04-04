@@ -1,4 +1,5 @@
 package assignment;
+import exceptions.InvalidInputException2;
 
 
 public class Account {
@@ -9,12 +10,12 @@ public class Account {
 	public int daysActive;
 	AccountType accountType;
 
-	public Account(double loanValue, double monthlyRate, AccountType accountType) throws Exception {
+	public Account(double loanValue, double monthlyRate, AccountType accountType) throws InvalidInputException2 {
 		if (loanValue < 0) {
-			throw new Exception();
+			throw new InvalidInputException2("Loan value must be a positive number");
 		}
 		if (monthlyRate < 0) {
-			throw new Exception();
+			throw new InvalidInputException2("Monthly Rate value must be a positive number");
 		}
 		this.loanValue = loanValue;
 		this.monthlyRate = monthlyRate;
@@ -35,9 +36,9 @@ public class Account {
 		return loanValue * monthlyRate;
 	}
 
-	public void setLoanValue(double loanValue) throws Exception {
+	public void setLoanValue(double loanValue) throws InvalidInputException2 {
 		if (loanValue < 0)
-			throw new Exception();
+			throw new InvalidInputException2("Loan value must be a positive number.");
 		else {
 			this.loanValue = loanValue;
 		}

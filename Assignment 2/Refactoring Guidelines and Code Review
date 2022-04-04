@@ -39,3 +39,5 @@ Functions
 * account final fee
 * remove function print()
 
+Exceptions
+- custom exceptions were created and implemented 
