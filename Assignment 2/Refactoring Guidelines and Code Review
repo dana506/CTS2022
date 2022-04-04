@@ -1,4 +1,4 @@
-Code Review
+Code Review and Refactoring 
 
 Formating
 * the code wasn't indented properly (proceed with indents)
@@ -40,4 +40,13 @@ Functions
 * remove function print()
 
 Exceptions
-- custom exceptions were created and implemented 
+* custom exceptions were created and implemented 
+
+Classes and Interfaces
+* public class fields were made private and accessor methods are used instead
+* created new interface for computing monthly rate and overwrote it in the Account class
+	
+	
+
+	
+	

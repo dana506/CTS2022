@@ -1,8 +1,9 @@
 package assignment;
 import exceptions.InvalidInputException2;
+import interfaces.MonthlyRatesInterface;
 
 
-public class Account {
+public class Account implements MonthlyRatesInterface {
 
 	public static final float BROKER_FEE = .0125f;
 	public static final float DAYS_IN_A_YEAR = 365;
@@ -32,9 +33,6 @@ public class Account {
 		return this.monthlyRate;
 	}
 
-	public double computeMonthlyRate() {
-		return loanValue * monthlyRate;
-	}
 
 	public void setLoanValue(double loanValue) throws InvalidInputException2 {
 		if (loanValue < 0)
@@ -86,6 +84,11 @@ public class Account {
 			}
 		}
 		return totalFee;
+	}
+
+	@Override
+	public double computeMonthlyRate() {
+		return this.loanValue * this.monthlyRate;
 	}
 
 }
