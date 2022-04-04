@@ -17,6 +17,25 @@ Meaningful names
 Comments
 * remove commented code 
 
-ENNUMS AND ANNOTATIONS
+Enumeration
 * account type values should be contained into an enumeration
 * remove the accountType integer
+
+Variables
+* .0125 broker fee as a static final variable 
+* 365 integer as a static final variable
+
+Objects
+* removed the unused temp variable
+* removed the unnecessary Account variable and used accounts[i] instead
+
+Validation
+* parameters are positive for loan and monthly rate
+
+Functions
+* difference between interest and principal 
+* account interest fee
+* loan value with interest
+* account final fee
+* remove function print()
+
