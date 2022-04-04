@@ -16,29 +16,40 @@ public class Account {
 	}
 
 	// must have method - the lead has requested it in all classes
-	public double getMonthlyRateValue() {
+	public double computeMonthlyRate() {
 		return loanValue * monthlyRate;
 	}
 
-	public void setLoanValue(double value) throws Exception {
-		if (value < 0)
+	public void setLoanValue(double loanValue) throws Exception {
+		if (loanValue < 0)
 			throw new Exception();
 		else {
-			loanValue = value;
+			this.loanValue = loanValue;
 		}
 	}
 
-	public String toString() {
-		return "Loan: " + this.loanValue + "; rate: " + this.monthlyRate + "; days active:" + daysActive + "; Type: "
-				+ accountType + ";";
-	}
+	public String getAccountDetails() {
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(System.getProperty("line.separator"));
+		stringBuilder.append("ACCOUNT DETAILS");
+		stringBuilder.append(System.getProperty("line.separator"));
+		stringBuilder.append("Loan value: ");
+		stringBuilder.append(this.loanValue);
+		stringBuilder.append("Monthly rate: ");
+		stringBuilder.append(this.monthlyRate);
+		stringBuilder.append("Days active: ");
+		stringBuilder.append(this.daysActive);
+		stringBuilder.append("Account type: ");
+		stringBuilder.append(this.accountType);
+		stringBuilder.append(System.getProperty("line.separator"));
+		return stringBuilder.toString();}
 
 	public void print() {
 		int vb = 10;
 		System.out.println("This is an account");
 	}
 
-	public static double calculate(Account[] accounts) {
+	public static double getPremiumAccountsTotalFeesValue(Account[] accounts) {
 		double totalFee = 0.0;
 		Account account;
 		int temp = 365;

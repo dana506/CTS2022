@@ -9,3 +9,7 @@ Formating
 General Programming
 * this keyword was added to differentiate the loanValue of the class and the parameter in the setter function
 * string concatenation was removed and function was implemented using string builder
+
+Meaningful names
+* more specific attributes names
+* more specific functions names
