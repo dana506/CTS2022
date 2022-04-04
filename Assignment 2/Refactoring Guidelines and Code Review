@@ -1,0 +1,7 @@
+Code Review
+
+Formating
+* the code wasn't indented properly (proceed with indents)
+* some curly brackets were added where they were missing
+* the else clause from constructor was removed because of the exception in the if clause
+* the use of proper, suggestive CammelCase names
