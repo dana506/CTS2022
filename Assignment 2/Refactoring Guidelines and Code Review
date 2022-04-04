@@ -16,3 +16,7 @@ Meaningful names
 
 Comments
 * remove commented code 
+
+ENNUMS AND ANNOTATIONS
+* account type values should be contained into an enumeration
+* remove the accountType integer

@@ -2,8 +2,16 @@ package assignment;
 
 public class Account {
 	public double loanValue, monthlyRate;
-	public int daysActive, accountType;
-	public static final int STANDARD = 0, BUDGET = 1, PREMIUM = 2, SUPER_PREMIUM = 3;
+	public int daysActive;
+	AccountType accountType;
+	
+	public Account(double value, double monthlyRate, AccountType accountType) throws Exception {
+		if (value < 0) {
+			loanValue = value;
+		}
+		this.monthlyRate = monthlyRate;
+		this.accountType = accountType;
+	}	
 
 	public double getLoanValue() {
 		System.out.println("The loan value is " + this.loanValue);
@@ -48,25 +56,19 @@ public class Account {
 		System.out.println("This is an account");
 	}
 
-	public static double getPremiumAccountsTotalFeesValue(Account[] accounts) {
+	public static double getPremiumAccountsTotalFees(Account[] accounts) {
 		double totalFee = 0.0;
 		Account account;
 		int temp = 365;
 		for (int i = 0; i < accounts.length; i++) {
 			account = accounts[i];
-			if (account.accountType == Account.PREMIUM || account.accountType == Account.SUPER_PREMIUM)
+			if (account.accountType == AccountType.PREMIUM || account.accountType == AccountType.SUPER_PREMIUM)
 				totalFee += .0125 * ( 
 				account.loanValue * Math.pow(account.monthlyRate, (account.daysActive / 365)) - account.loanValue); 
 		}
 		return totalFee;
 	}
 
-	public Account(double value, double monthlyRate, int accountType) throws Exception {
-		if (value < 0) {
-			loanValue = value;
-		}
-		this.monthlyRate = monthlyRate;
-		this.accountType = accountType;
-	}
+
 
 }
