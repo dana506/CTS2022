@@ -1,0 +1,9 @@
+Final Project: Android Application for weather prediction and forecasting
+
+The decorator pattern can be used in my project for decorating a new list view element based
+on a template first one and a different kind of user (administrator) based on anothe user model.
+
+The advantages are being easy to implement, the capability to be add different functionalities
+to the main concept and of course, the fact that there are no limits in the number of decorations.
+But the decorator design pattern is only a wrapper to the initial object and could lead to a lot 
+of similar objects with different behaviors.

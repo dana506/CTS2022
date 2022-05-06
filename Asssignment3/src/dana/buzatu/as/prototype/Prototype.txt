@@ -1,0 +1,8 @@
+Final Project: Android Application for weather prediction and forecasting
+
+Prototype pattern aids at cloning certain project data files in order to pursue 
+with data analysis in weather forecasting. This way is easy to detect errors and 
+it is quite straight forward to implement.Otherwise, it could get a little tricky 
+when dealing with complex objects.
+
+

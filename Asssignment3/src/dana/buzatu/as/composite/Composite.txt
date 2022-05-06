@@ -1,0 +1,7 @@
+Final Project: Android Application for weather prediction and forecasting
+
+In my application, there is a hierarchical structure of various data files created by 
+the user with the purpose of being used for weather forecasting data analysis. Therefore 
+a composite pattern has been chosen due to its flexibility and being easily extensible.
+We can easily integrate new leaf nodes without alterations.
+On the other hand, it is difficult  to modify the general structure of the hierarchy.

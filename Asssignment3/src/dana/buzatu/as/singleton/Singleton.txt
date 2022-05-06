@@ -1,0 +1,13 @@
+Final Project: Android Application for weather prediction and forecasting
+
+The singleton pattern allows a class or an object to have a single instance.
+A global variable will be used in order to manage the created instance in order to
+prevent multiple instances to be active at the same time. 
+
+I believe that this pattern could be an useful one regarding logging errors that
+may occur from all the different parts of my application during debugging.
+
+Its advantages are that the class can be instantiated only once with global access 
+to that instance. Besides being easy to use, there is no need for synchronization
+and we can use the principle of lazy instantiation. On the other hand, one disadvantage
+may be that the singleton implementation does not follow the DRY principle.

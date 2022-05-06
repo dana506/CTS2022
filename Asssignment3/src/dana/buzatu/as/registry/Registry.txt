@@ -1,0 +1,10 @@
+Final Project: Android Application for weather prediction and forecasting
+
+Multiple unique objects are managed using a collection, in this case a HashMap
+for error log information regarding my app.
+When creating a log instance, it is better to first check if the instance exists 
+and then create a new one to store it in the HashMap. This is quite similar to
+Singleton, it is easy to implement but, this time multiple variants of the same
+class may be created. More than one instance of the singleton is stored in the
+collection and this is rather a disadvantage.
+
