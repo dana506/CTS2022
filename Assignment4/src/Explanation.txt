@@ -1,0 +1,6 @@
+1. Template Design Pattern to implement the weather station functionalities
+2. State Design Patter to model Weather Station Data
+3. Observer Design Pattern to manage the clients
+4. Command Design Pattern to work around client notifications
+5. Chain of Responsability Design Pattern to deal with different actions of the local fire department
+6. Memento Design Pattern in order to manage the chose path of the fire drone
